@@ -1,4 +1,4 @@
-## Forked from ophub/amlogic-s9xxx-openwrt
+## Forked and credit from ophub/amlogic-s9xxx-openwrt
 
 - [ophub/amlogic-s9xxx-openwrt](https://github.com/ophub/amlogic-s9xxx-openwrt)
 
