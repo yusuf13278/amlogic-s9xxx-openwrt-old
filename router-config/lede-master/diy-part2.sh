@@ -75,19 +75,3 @@ git clone https://github.com/MatJehey/autocore-arm-x86.git package/new/luci-app-
 git clone https://github.com/kiddin9/openwrt-bypass.git package/new/luci-app-bypass
 
 
-# ## Fullcone-NAT Section ###
-# Patch Kernel to resolve FullCone conflicts
-pushd target/linux/generic/hack-5.4
-wget https://github.com/coolsnowwolf/lede/raw/master/target/linux/generic/hack-5.4/952-net-conntrack-events-support-multiple-registrant.patch
-popd
-# Patch FireWall to add FullCone functionality
-mkdir package/network/config/firewall/patches
-wget -P package/network/config/firewall/patches/ https://github.com/immortalwrt/immortalwrt/raw/master/package/network/config/firewall/patches/fullconenat.patch
-wget -qO- https://github.com/msylgj/R2S-R4S-OpenWrt/raw/21.02/PATCHES/001-fix-firewall-flock.patch | patch -p1
-# Patch LuCI to add FullCone switch
-patch -p1 <../PATCH/firewall/luci-app-firewall_add_fullcone.patch
-# FullCone related components
-svn co https://github.com/coolsnowwolf/lede/trunk/package/lean/openwrt-fullconenat package/lean/openwrt-fullconenat
-pushd package/lean/openwrt-fullconenat
-patch -p2 <../../../../PATCH/firewall/fullcone6.patch
-popd
