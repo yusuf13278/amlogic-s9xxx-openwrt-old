@@ -35,3 +35,16 @@ git clone https://github.com/MatJehey/autocore-arm-x86.git package/new/luci-app-
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-21.02/package/emortal/autocore package/lean/autocore
 rm -rf ./feeds/packages/utils/coremark
 svn co https://github.com/immortalwrt/packages/trunk/utils/coremark feeds/packages/utils/coremark
+
+# kengzo
+git clone https://github.com/kenzok8/openwrt-packages package/new/kengzo
+git clone https://github.com/kenzok8/small package/new/small
+
+# Bypass
+git clone https://github.com/kiddin9/openwrt-bypass.git package/new/luci-app-bypass
+
+# modem
+git clone https://github.com/4IceG/luci-app-3ginfo-lite.git package/new/luci-app-3ginfo-lite
+
+# libernet
+git clone https://github.com/helmiau/helmiwrt-packages.git package/new/libernet
