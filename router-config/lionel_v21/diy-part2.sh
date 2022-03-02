@@ -60,3 +60,27 @@ git clone https://github.com/MatJehey/autocore-arm-x86.git package/new/luci-app-
 svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-21.02/package/emortal/autocore package/lean/autocore
 rm -rf ./feeds/packages/utils/coremark
 svn co https://github.com/immortalwrt/packages/trunk/utils/coremark feeds/packages/utils/coremark
+
+
+# passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/new/luci-app-passwall
+
+# ssr+
+git clone https://github.com/fw876/helloworld.git package/new/luci-app-ssr
+
+# openclash
+git clone https://github.com/vernesong/OpenClash.git package/new/luci-app-openclash
+
+# vssr
+git clone https://github.com/jerrykuku/luci-app-vssr.git package/new/luci-app-vssr
+# vssr maxmind
+git clone https://github.com/jerrykuku/lua-maxminddb.git package/new/lua-maxminddb
+
+# Bypass
+git clone https://github.com/kiddin9/openwrt-bypass.git package/new/luci-app-bypass
+
+# modem
+git clone https://github.com/4IceG/luci-app-3ginfo-lite.git package/new/luci-app-3ginfo-lite
+
+# Add p7zip
+svn co https://github.com/hubutui/p7zip-lede/trunk package/lean/p7zip
