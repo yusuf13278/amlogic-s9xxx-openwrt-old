@@ -38,14 +38,15 @@
 - LINKSYS WRT1900ACV1 MAMBA/NONMAMBA
 - ORANGE PI R1 PLUS LTS
 - XIAOMI MI 4C
+- XIAOMI MI4A 100M
 
 ## OPENWRT FIRMWARE LINK DOWNLOAD
 
-- https://github.com/MatJehey/-OPENWRT-FIRMWARE-COMPILATION-1/releases
-- https://github.com/MatJehey/-OPENWRT-FIRMWARE-COMPILATION-2/releases
-- https://github.com/MatJehey/-OPENWRT-FIRMWARE-COMPILATION-3/releases
-- https://github.com/MatJehey/-OPENWRT-FIRMWARE-COMPILATION-4/releases
-- https://github.com/MatJehey/-OPENWRT-FIRMWARE-COMPILATION-5/releases
+- https://github.com/MatJeheyy/-OPENWRT-FIRMWARE-COMPILATION-1/releases
+- https://github.com/MatJeheyy/-OPENWRT-FIRMWARE-COMPILATION-2/releases
+- https://github.com/MatJeheyy/-OPENWRT-FIRMWARE-COMPILATION-3/releases
+- https://github.com/MatJeheyy/-OPENWRT-FIRMWARE-COMPILATION-4/releases
+- https://github.com/MatJeheyy/-OPENWRT-FIRMWARE-COMPILATION-5/releases
 
 # OpenWrt for Amlogic s9xxx tv box
 
