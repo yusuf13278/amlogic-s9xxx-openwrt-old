@@ -20,9 +20,6 @@ sed -i "s|DISTRIB_REVISION='.*'|DISTRIB_REVISION='R$(date +%Y.%m.%d)'|g" package
 # Modify default IP（FROM 192.168.1.1 CHANGE TO 192.168.31.4）
 # sed -i 's/192.168.1.1/192.168.31.4/g' package/base-files/files/bin/config_generate
 
-# 移除 SNAPSHOT 标签
-sed -i 's,-SNAPSHOT,,g' include/version.mk
-sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
 
 
 #
@@ -55,14 +52,14 @@ svn co https://github.com/hubutui/p7zip-lede/trunk package/lean/p7zip
 #
 # ------------------------------- Other ends -------------------------------
 
-# Argon
-git clone https://github.com/jerrykuku/luci-theme-argon.git package/new/luci-theme-argon
+# 移除 SNAPSHOT 标签
+sed -i 's,-SNAPSHOT,,g' include/version.mk
+sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
 
-# Edge
-git clone https://github.com/kiddin9/luci-theme-edge.git package/new/luci-theme-edge
 
-# Vssr
-git clone -b master --depth 1 https://github.com/jerrykuku/luci-app-vssr.git package/vssr
+# Autocore Stb
+git clone https://github.com/MatJehey/autocore-arm-x86.git package/new/luci-app-autocore
 
-# Maxmind Vssr
-git clone -b master --depth 1 https://github.com/jerrykuku/lua-maxminddb.git package/maxmind
+
+# modem
+git clone https://github.com/4IceG/luci-app-3ginfo-lite.git package/new/luci-app-3ginfo-lite
