@@ -21,20 +21,10 @@ sed -i 's,-SNAPSHOT,,g' package/base-files/image-config.in
 # Add luci-app-amlogic
 svn co https://github.com/ophub/luci-app-amlogic/trunk package/luci-app-amlogic
 
-# Add autocore
-# svn co https://github.com/ophub/amlogic-s9xxx-openwrt/trunk/amlogic-s9xxx/common-files/patches/autocore package/lean/autocore
 
 # Add p7zip
 svn co https://github.com/hubutui/p7zip-lede/trunk package/lean/p7zip
 
-# Autocore Stb
-git clone https://github.com/MatJehey/autocore-arm-x86.git package/new/luci-app-autocore
-
-
-# AutoCore
-svn co https://github.com/immortalwrt/immortalwrt/branches/openwrt-21.02/package/emortal/autocore package/lean/autocore
-rm -rf ./feeds/packages/utils/coremark
-svn co https://github.com/immortalwrt/packages/trunk/utils/coremark feeds/packages/utils/coremark
 
 # kengzo
 git clone https://github.com/kenzok8/openwrt-packages package/new/kengzo
@@ -48,3 +38,16 @@ git clone https://github.com/4IceG/luci-app-3ginfo-lite.git package/new/luci-app
 
 # libernet
 git clone https://github.com/helmiau/helmiwrt-packages.git package/new/libernet
+
+# Add autocore
+svn co https://github.com/ophub/amlogic-s9xxx-openwrt/trunk/amlogic-s9xxx/common-files/patches/autocore package/lean/autocore
+
+# AutoCore
+svn export https://github.com/immortalwrt/immortalwrt/branches/master/package/emortal/autocore package/lean/autocore
+sed -i 's/"getTempInfo" /"getTempInfo", "getCPUBench", "getCPUUsage" /g' package/lean/autocore/files/generic/luci-mod-status-autocore.json
+rm -rf ./feeds/packages/utils/coremark
+svn export https://github.com/immortalwrt/packages/trunk/utils/coremark feeds/packages/utils/coremark
+
+
+# Autocore Stb
+git clone https://github.com/MatJehey/autocore-arm-x86.git package/new/luci-app-autocore
