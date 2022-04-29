@@ -15,7 +15,7 @@ on:
 
 env:
   REPO_URL: https://github.com/Lienol/openwrt
-  REPO_BRANCH: main
+  REPO_BRANCH: 22.03
   FEEDS_CONF: router-config/lionel/feeds.conf.default
   CONFIG_FILE: router-config/lionel/.config
   DIY_P1_SH: router-config/lionel/diy-part1.sh
