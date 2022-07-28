@@ -171,19 +171,19 @@ git clone --single-branch --depth 1 -b dev https://github.com/vernesong/OpenClas
 
 
 # VSSR
-git clone -b master --depth 1 https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
-git clone -b master --depth 1 https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
-pushd package/lean/luci-app-vssr
-sed -i 's,default n,default y,g' Makefile
-sed -i '/trojan-go/d' Makefile
-sed -i '/v2ray-core/d' Makefile
-sed -i '/v2ray-plugin/d' Makefile
-sed -i '/xray-plugin/d' Makefile
-sed -i 's,+shadowsocks-libev-ss-local ,,g' Makefile
-popd
-sed -i '/result.encrypt_method/a\result.fast_open = "1"' package/lean/luci-app-vssr/root/usr/share/vssr/subscribe.lua
-sed -i 's,ispip.clang.cn/all_cn.txt,raw.sevencdn.com/QiuSimons/Chnroute/master/dist/chnroute/chnroute.txt,g' package/lean/luci-app-vssr/luasrc/controller/vssr.lua
-sed -i 's,ispip.clang.cn/all_cn.txt,raw.sevencdn.com/QiuSimons/Chnroute/master/dist/chnroute/chnroute.txt,g' package/lean/luci-app-vssr/root/usr/share/vssr/update.lua
+# git clone -b master --depth 1 https://github.com/jerrykuku/luci-app-vssr.git package/lean/luci-app-vssr
+# git clone -b master --depth 1 https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
+# pushd package/lean/luci-app-vssr
+# sed -i 's,default n,default y,g' Makefile
+# sed -i '/trojan-go/d' Makefile
+# sed -i '/v2ray-core/d' Makefile
+# sed -i '/v2ray-plugin/d' Makefile
+# sed -i '/xray-plugin/d' Makefile
+# sed -i 's,+shadowsocks-libev-ss-local ,,g' Makefile
+# popd
+# sed -i '/result.encrypt_method/a\result.fast_open = "1"' package/lean/luci-app-vssr/root/usr/share/vssr/subscribe.lua
+# sed -i 's,ispip.clang.cn/all_cn.txt,raw.sevencdn.com/QiuSimons/Chnroute/master/dist/chnroute/chnroute.txt,g' package/lean/luci-app-vssr/luasrc/controller/vssr.lua
+# sed -i 's,ispip.clang.cn/all_cn.txt,raw.sevencdn.com/QiuSimons/Chnroute/master/dist/chnroute/chnroute.txt,g' package/lean/luci-app-vssr/root/usr/share/vssr/update.lua
 
 
 #######################################################################################################################
@@ -254,7 +254,7 @@ sed -i '/Default,one/a\\t$(STAGING_DIR_HOST)/bin/upx --lzma --best $(PKG_BUILD_D
 ###########################################################################################################################
 
 # Bypass
-git clone https://github.com/kiddin9/openwrt-bypass.git package/new/luci-app-bypass
+# git clone https://github.com/kiddin9/openwrt-bypass.git package/new/luci-app-bypass
 
 #############################################################################################################################
 
